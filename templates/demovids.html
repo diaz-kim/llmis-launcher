@@ -1,0 +1,50 @@
+<!-- Kim T. DIAZ, Mara T. CHUA, Camille VENTOSO -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="vidContainer">
+        <div id="headerBlock">
+            <h2>Demo Videos</h2>
+            <p>
+            On this page are videos for each role. The user is demonstrating the functionalities available for each. Use the anchors on the right of the screen to navigate.
+            </p>
+            <div style="text-align: center;">
+            <a id="admin"></a>
+            <h3>Admin</h3>
+            <video width="100%" controls preload="auto" >
+                <source src="{{ url_for('static', filename='admin.mp4') }}" type="video/mp4">
+            </video>
+            <br><br>
+            <a id="staff"></a>
+            <h3>Staff</h3>
+            <video width="100%" controls preload="auto" >
+                <source src="{{ url_for('static', filename='staff.mp4') }}" type="video/mp4">
+            </video>
+            <br>
+            <video width="100%" controls preload="auto" >
+                <source src="{{ url_for('static', filename='staff2.mp4') }}" type="video/mp4">
+            </video>
+            <br><br>
+            <a id="rider"></a>
+            <h3>Rider</h3>
+            <video width="40%" controls preload="auto">
+                <source src="{{ url_for('static', filename='rider.mp4') }}" type="video/mp4">
+            </video>
+            <br><br>
+            <a id="client"></a>
+            <h3>Client</h3>
+            <video width="40%" controls preload="auto" >
+                <source src="{{ url_for('static', filename='client.mp4') }}" type="video/mp4">
+            </video>
+            </div>
+        </div>
+    </div>
+    <div id="vidNav">
+        <ul class="navList">
+            <a href="#admin"><li>Admin</li></a>
+            <a href="#staff"><li>Staff</li></a>
+            <a href="#rider"><li>Rider</li></a>
+            <a href="#client"><li>Client</li></a>
+        </ul>
+    </div>
+{% endblock %}

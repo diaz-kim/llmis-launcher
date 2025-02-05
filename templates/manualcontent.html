@@ -1,0 +1,124 @@
+<!-- Kim T. DIAZ, Mara T. CHUA, Camille VENTOSO -->
+<div id="headerBlock">
+    <a id="adminParent"></a>
+    <a id="adminDash"></a>
+    <h3>Admin dashboard</h3>
+    <img src="{{url_for('static', filename='1.png')}}" class="desktopImg"/>
+
+    <p> 1)	Sends user to admin dashboard (this page).</p>
+    <p> 2)	Navigation button that allows for registering new staff users and logging out. Only the admin user is allowed to register other admins, staff, and riders.</p>
+    <p> 3)	Navigates to the Employees, Riders, and Clients account management pages.</p>
+    <p> 4)	Navigates to feedback reports summary page.</p>
+    <p> 5)	Navigates to transaction history pages.</p>
+    <p> 6)	Navigates to inventory module.</p>
+    <p> 7)	Navigates to transaction type management.</p>
+    <p> 8)	Buttons to generate reports according to date range, sorted by service.</p>
+    <br>
+    <a id="accountMgmt"></a>
+    <h3>Accounts management (Employees as example)</h3>
+    <img src="{{url_for('static', filename='2.png')}}" class="desktopImg"/>
+    <p> 9)	Navigates to profile details of specific user.</p>
+    <p> 10)	Toggles status of user between active and deactivated, with optional remark regarding status change.</p>
+    <br>
+    <a id="transHistory"></a>
+    <h3>Transaction history</h3>
+    <img src="{{url_for('static', filename='3.png')}}" class="desktopImg"/>
+    <p> 11)	Generates report according to service type of page, sorted by date range.</p>
+    <p> 12)	Navigation buttons to other service types.</p>
+    <p> 13)	Navigates to details regarding specific transaction.</p>
+    <br>
+    <a id="invMgmt"></a>
+    <h3>Inventory management</h3>
+    <img src="{{url_for('static', filename='4.png')}}" class="desktopImg"/>
+    <p> 14)	Navigates to inventory management page (this page).</p>
+    <p> 15)	Navigates to inventory log, which records changes to inventory amounts.</p>
+    <p> 16)	Allows for increasing amount of inventory item.</p>
+    <p> 17)	Allows for decreasing amount of inventory item.</p>
+    <p> 18)	Allows for changing pricing of inventory item. </p>
+    <br>
+    <a id="transTypes"></a>
+    <h3>Transaction types</h3>
+    <img src="{{url_for('static', filename='5.png')}}" class="desktopImg"/>
+    <p> 19)	Navigates to transaction types page (this page).</p>
+    <p> 20)	Navigates to form for adding new transaction type.</p>
+    <p> 21)	Allows for editing details of transaction type.</p>
+
+    <br><hr><br>
+
+    <a id="staffParent"></a>
+    <a id="staffDash"></a>
+    <h3>Staff dashboard</h3>
+    <img src="{{url_for('static', filename='6.png')}}" class="desktopImg"/>
+    <p> 22)	Navigates to staff dashboard (this page).</p>
+    <p> 23)	Navigates to transaction processing pages.</p>
+    <p> 24)	Navigates to staff transaction history pages.</p>
+    <p> 25)	Navigates to all active delivery transactions.</p>
+    <p> 26)	Navigation tabs to redirect to sorted delivery transactions.</p>
+    <p> 27)	Displays details of specific transaction.</p>
+    <p> 28)	Allows for transaction to be marked as complete.</p>
+    <br>
+    <a id="proTrans"></a>
+    <h3>Process transaction </h3>
+    <img src="{{url_for('static', filename='7.png')}}" class="desktopImg"/>
+    <p> 29)	Navigates to specific service of transactions.</p>
+    <p> 30)	Displays price upon click.</p>
+    <p> 31)	Confirms transaction and its details.</p>
+    <br>
+    <a id="delTrans"></a>
+    <h3>Delivery transactions </h3>
+    <img src="{{url_for('static', filename='8.png')}}" class="desktopImg"/>
+    <p> 32)	Navigates to all active delivery transactions (this page).</p>
+    <p> 33)	Navigates to queue of incoming delivery requests.</p>
+    <p> 34)	Navigates to sorted delivery transactions.</p>
+    <p> 35)	Displays details of specific delivery transaction.</p>
+    <p> 36)	Allows for editing status of transaction.</p>
+
+    <br><hr><br>
+
+    <a id="riderParent"></a>
+    <a id="riderDash"></a>
+    <h3>Rider dashboard</h3>
+    <img src="{{url_for('static', filename='9.png')}}" class="mobileImg"/>
+    <p> 37)	Navigates to rider dashboard (this page), which displays delivery transactions assigned to rider.</p>
+    <p> 38)	Navigates to rider’s vehicle details.</p>
+    <p> 39)	Logs user out.</p>
+    <p> 40)	Displays details and tracking controls of delivery transaction.</p>   
+    <br>
+    <a id="riderDelTrans"></a>
+    <h3>Delivery transaction details</h3>
+    <img src="{{url_for('static', filename='10.png')}}" class="mobileImg"/>
+    <p> 41)	Expands or collapses relevant transaction details.</p>
+    <p> 42)	Controls location status of rider, regarding whether or not both staff and client may track their location on the relevant map.</p>
+    <p> 43)	Displays map for the specific delivery, allowing for rider navigation.</p>
+    <br>
+
+    <br><hr><br>
+
+    <a id="clientParent"></a>
+    <a id="clientDash"></a>
+    <h3>Client home page</h3>
+    <img src="{{url_for('static', filename='11.png')}}" class="mobileImg"/>
+    <p> 44)	Navigates to client home page (this page), displaying their delivery requests.</p>
+    <p> 45)	Navigates to map, allowing client user to edit their delivery address.</p>
+    <p> 46)	Navigates to profile information, allowing client user to edit their personal details.</p>
+    <p> 47)	Displays details of transaction, as well as feedback. A red dot indicates a reply from an admin user.</p>
+    <p> 48)	Navigates to delivery request submission page.</p>
+    <br>
+    <a id="clientMap"></a>
+    <h3>Delivery request submission page (map section)</h3>
+    <img src="{{url_for('static', filename='12.png')}}" class="mobileImg"/>
+    <p> 49)	Map that displays client’s last saved delivery address.</p>
+    <p> 50)	Buttons to save a new delivery address, whether from device’s GPS or manual map marker.</p>
+    <br>
+    <a id="clientOrder"></a>
+    <h3>Delivery request submission page (order section)</h3>
+    <img src="{{url_for('static', filename='13.png')}}" class="mobileImg"/>
+    <p> 51)	Displays delivery fee once checked.</p>
+    <p> 52)	Confirms order, sends request to staff users.</p>
+    <br>
+    <a id="clientDetails"></a>
+    <h3>Delivery request details</h3>
+    <img src="{{url_for('static', filename='14.png')}}" class="mobileImg"/>
+    <p> 53)	Allows for submitting and reviewing feedback of client, as well as admin response.</p>
+    <p> 54)	Map that allows for tracking of rider assigned to this specific transaction.</p>
+</div>

@@ -1,0 +1,45 @@
+<!-- Kim T. DIAZ, Mara T. CHUA, Camille VENTOSO -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="contentContainer">
+        <div id="headerBlock" style="text-align: center;">
+            <a id="sysDesign"></a>
+            <h2>System Design</h2>
+            <br>
+            <img src="{{url_for('static', filename='operationalFramework.png')}}" width="70%" style="border: 2px solid black;"/>
+            <h4>Operational Framework</h4>
+            <p class="caption"> The architecture for the system is displayed in this diagram. As the image depicts: Using an internet
+                connection, all data from client, admin, rider, and staff accounts can be stored and retrieved in the
+                database.</p>
+            <br>
+            <img src="{{url_for('static', filename='SDLC.png')}}" width="70%" style="border: 2px solid black;"/>
+            <h4>System Development Life Cycle</h4>
+            <p class="caption"> The system used
+                a <strong>modified waterfall model</strong>. It is used to build systems in an orderly sequence approach.
+                and a systematic flow of
+                development stages, incorporating adaptable iterative
+                phases to enhance the quality, dependability, and
+                maintainability of the customized software by ensuring
+                sufficient documentation and design reviews.</p>
+            <br><hr><br>
+            <a id="document"></a>
+            <h2>Capstone Document</h2>
+            <embed src="{{ url_for('static', filename='document.pdf') }}" type="application/pdf" width="70%" height="600px" style="border: 2px solid black;"/>
+            <br><hr><br>
+            <a id="installGuide"></a>
+            <h2>Installation Guide</h2>
+            <p class="caption">
+                There is <strong>no necessary installation</strong> for the Labadero Laundry Management Information System (LLMIS).
+                It is a web-based app that can be accessed on desktop and mobile.
+            </p>
+        </div>
+        <div id="vidNav">
+            <ul class="navList" style="text-align: left;">
+                <a href="#sysDesign"><li>System Design</li></a>
+                <a href="#document"><li>Capstone Document</li></a>
+                <a href="#installGuide"><li>Installation Guide</li></a>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

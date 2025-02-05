@@ -1,0 +1,314 @@
+/* Kim T. DIAZ, Mara T. CHUA, Camille VENTOSO */
+html{
+    scroll-padding-top: 54px;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #2b2b2b;
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    height: 40px;
+  }
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #C9C9C9;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #161616;
+    color: white;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+}
+
+.contentContainer {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contentContainer embed {
+    margin: 0 auto;
+    display: block;
+}
+
+.vidContainer {
+    width: 100%;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.homeButton {
+    background-color: rgba(0,0,0,0.2);
+    border: 2px solid white !important;
+    color: white;
+    font-size: 16px;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color,border 0.3s;
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;;
+}
+
+.homeButton:hover {
+    background-color: #27272791;
+    color: white;
+    border: 2px solid #27272791 !important;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 80%;
+    }
+}
+
+#headerBlock {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#manualNav {
+    width: 20%;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ececec;
+    overflow-y: auto;
+    height: vh;
+}
+
+#manualNav a {
+    text-decoration: none;
+}
+
+#manualNav p {
+    padding: 0px;
+    margin-bottom: 3px;
+}
+
+#manualNav li {
+    margin-bottom: 2px;
+}
+
+.contentContainer {
+    width: 100%;
+}
+
+.navList {
+    list-style-type: none;
+}
+
+.desktopImg{
+    width: 99%;
+    border: 2px solid black;
+}
+
+.mobileImg {
+    width: 300px;
+    border: 2px solid black;
+}
+
+h3 {
+    padding: 0px;
+}
+
+#parentList {
+    margin-bottom: 0px;
+    margin-left: -10px;
+}
+
+#manualNav h3 {
+    text-align: center;
+
+}
+
+#manualNav a:link {
+    color: #576261;
+    transition: font-weight 0.1s;
+}
+
+#manualNav a:visited {
+    color: #413D3E;
+}
+
+#manualNav a:hover {
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+#manualNav a:active {
+    color: #C9C9C9;
+}
+
+#vidNav {
+    width: 20%;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 10px;
+    margin: 20px;
+    overflow-y: auto;
+}
+
+#vidNav li {
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+#vidNav li:hover {
+    padding: 15px;
+    background-color: #E4E4E4;
+}
+
+#vidNav h3 {
+    text-align: center;
+
+}
+
+#vidNav a:link {
+    color: #576261;
+    transition: font-weight 0.2s;
+}
+
+#vidNav a:visited {
+    color: #413D3E;
+}
+
+#vidNav a {
+    text-decoration: none;
+}
+
+#vidNav p {
+    padding: 0px;
+    margin-bottom: 3px;
+}
+
+#vidNav li {
+    margin-bottom: 2px;
+}
+
+@media (max-width: 800px) {
+    /* Adjust for smaller screens */
+    .container-left {
+        width: 100%;
+        margin-bottom: 20px; /* Space between the left content and right nav */
+    }
+    #manualNav {
+        width: 100%;
+        position: relative; /* Remove fixed positioning */
+    }
+}
+
+@font-face {
+	font-family: 'proxima_nova_rgregular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_rgbold';
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+video {
+    border: 2px solid #38383D;
+}
+
+#homeContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url('/static/laundrydark.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+#hammer {
+    font-weight: 900;
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    color: white;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered p {
+    margin: 0;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.caption {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+}
